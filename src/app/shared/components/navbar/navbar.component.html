@@ -1,32 +1,38 @@
-<nav class="bg-neutral-800">
+<nav class="bg-slate-900">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
 
-      <div class="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start">
+      <div class="flex gap-4 flex-1 items-start justify-start sm:items-stretch sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="https://tse3.mm.bing.net/th?id=OIP.rIeUgEgT00xLHZJPugnDbAHaKs&pid=Api&P=0&h=180" alt="Your Company">
+          <img class="h-8 w-auto" src="https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg" alt="Your Company">
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#"
-               class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 text-white"
-               aria-current="page">Beer Page</a>
+            <a routerLink="/cocktail"
+               routerLinkActive="text-blue-500  hover:bg-gray-700"
+               class="rounded-md px-3 py-2 text-sm font-medium text-white"
+               aria-current="page">Cocktails Page</a>
             <a
-              routerLink="/about"
-              routerLinkActive="text-blue-500"
-              class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 text-white"
-              >About
+              routerLink="/vodka"
+              routerLinkActive="text-blue-500  hover:bg-gray-700"
+              class="rounded-md px-3 py-2 text-sm font-medium text-white"
+              >Vodka
             </a>
-            <a routerLink="/pricing"
-               routerLinkActive="text-blue-500"
-               class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 text-white"
-               >Pricing
+            <a routerLink="/ron"
+               routerLinkActive="text-blue-500 hover:bg-gray-700"
+               class="rounded-md px-3 py-2 text-sm font-medium text-white"
+               >Ron
             </a>
-            <a routerLink="/contact"
-              routerLinkActive="text-blue-500"
-               class="rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 text-white"
-               >Contact
+            <a routerLink="/tequila"
+              routerLinkActive="text-blue-500 hover:bg-gray-700"
+               class="rounded-md px-3 py-2 text-sm font-medium text-white"
+               >Tequila
+              </a>
+              <a routerLink="/whisky"
+              routerLinkActive="text-blue-500 hover:bg-gray-700"
+               class="rounded-md px-3 py-2 text-sm font-medium text-white"
+               >whisky
               </a>
           </div>
         </div>

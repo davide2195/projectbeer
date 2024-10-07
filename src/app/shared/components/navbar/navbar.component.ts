@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -16,9 +15,9 @@ export default class NavbarComponent implements OnInit {
   private meta = inject(Meta);
 
   ngOnInit(): void {
-    this.title.setTitle('Beer Page');
-    this.meta.updateTag({ name: 'description', content: 'Beer Page' });
-    this.meta.updateTag({ name: 'og:title', content: 'My Beer Page' });
+    this.title.setTitle('Cocktails Page');
+    this.meta.updateTag({ name: 'description', content: 'Cocktails Page' });
+    this.meta.updateTag({ name: 'og:title', content: 'My Cocktails Page' });
 
   }
 

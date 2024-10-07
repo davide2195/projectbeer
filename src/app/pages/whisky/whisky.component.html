@@ -1,0 +1,10 @@
+<div class="grid gap-3 grid-cols-1 sm:grid-cols-3 md:grid-cols-5">
+
+
+  @for ( beer of  beer(); track beer.id) {
+    <beer-card [beer]="beer" />
+   }
+
+
+</div>
+
