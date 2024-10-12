@@ -22,7 +22,8 @@ export class BeersService {
           name: beer.strDrink,
           img: beer.strDrinkThumb,
           cat: beer.strCategory,
-          tipo: beer.strAlcoholic
+          tipo: beer.strAlcoholic,
+          strTags: beer.strTags
         }))
 
         return simpleBeer;

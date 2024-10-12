@@ -8,13 +8,11 @@
       [alt]="beer().name">
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">{{ beer().name }}</div>
-    <p class="text-gray-700 text-base">
-      {{ beer().cat }}
-      {{ beer().tipo }}
-    </p>
   </div>
   <div class="px-6 pt-4 pb-2">
-    <button class="inline-block bg-teal-400 rounded-full px-3 py-1 text-sm justify-end align-bottom font-semibold text-teal-950 mr-2 mb-2">Receipe</button>
+    <a
+    [routerLink]="['/cocktails/']"
+    class="inline-block bg-teal-400 rounded-full px-3 py-1 text-sm justify-end align-bottom font-semibold text-teal-950 mr-2 mb-2">Receipe</a>
   </div>
 </div>
 

@@ -6,4 +6,5 @@ export interface SimpleBeer{
   img: string,
   cat: string,
   tipo: string
+  strTags: string
 }
