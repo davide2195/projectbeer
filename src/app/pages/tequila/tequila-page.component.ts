@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { SimpleBeer } from '../../beers/interfaces';

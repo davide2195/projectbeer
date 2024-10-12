@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import {  map, Observable, tap } from 'rxjs';
+import { map, Observable, tap, switchMap } from 'rxjs';
 import { BeerAPIResponse, Cocktail, SimpleBeer } from '../interfaces';
 
 @Injectable({
@@ -33,11 +33,12 @@ export class BeersService {
   }
 
 
-  getCocktailById( idDrink?: string) {
+   getCocktailById( idDrink?: string) {
     return this.http.get<Cocktail>(`https://thecocktaildb.com/api/json/v2/9973533/search.php?s=${idDrink}`)
      .pipe(
-      map( resp => resp.drinks[0] )
+       map( (resp) => resp.drinks[0])
      )
-
   }
+
+
 }

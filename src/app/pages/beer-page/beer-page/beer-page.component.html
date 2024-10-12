@@ -1,32 +1,33 @@
 
-@if ( cocktail()! === null ) {
-
-  <div class="flex justify-center">
-    <h1 class="text-4xl font-bold">Loading...</h1>
+<div
+    [routerLink]="['/cocktails/:idDrink']" routerLinkActive="router-link-active"
+    class=
+    "max-w-sm animate-fadeIn rounded overflow-hidden shadow-lg cursor-pointer">
+  <img class="w-full"
+      [src]="cocktail()!['strDrinkThumb']"
+      [alt]="cocktail()!['strDrink']"
+      class="w-64 h-64"
+      width="256px"
+      height="256px"
+  >
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">{{  cocktail()!['strDrink'] }}</div>
+    <p class="text-gray-700 text-base">
+      {{ cocktail()!['strIngredient1'] }} - {{ cocktail()!['strMeasure1'] }}
+      <br>
+      {{ cocktail()!['strIngredient2'] }} - {{ cocktail()!['strMeasure2'] }}
+      <br>
+      {{ cocktail()!['strIngredient3'] }} - {{ cocktail()!['strMeasure3'] }}
+      <br>
+      {{ cocktail()!['strIngredient4'] }} - {{ cocktail()!['strMeasure4'] }}
+    </p>
   </div>
-
-} @else {
-
-  <section class="flex flex-col justify-center">
-    <div>
-      <h1 class="text-4xl font-bold capitalize my-5">
-        <!-- {{ cocktail()!['strDrink'] }} -->
-      </h1>
-    </div>
-    <div>
-      <h2>
-        <!-- {{ cocktail()!['strIngredient1'] }} -->
-      </h2>
-    </div>
-  </section>
-}
-
-
-
- <!-- <h1>Issue numbre:
-  <small>{{ beerId() }}</small>
-</h1> -->
-
+  <div class="px-6 py-4">
+    <p class="text-gray-700 text-base">
+      {{ cocktail()!['strInstructions'] }}
+    </p>
+  </div>
+</div>
 
 
 
